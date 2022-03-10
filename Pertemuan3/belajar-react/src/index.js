@@ -3,12 +3,12 @@ import ReactDOM, { render } from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HelloComponent from "./component/HelloComponent";
-// import LoginComponent from "./component//LoginComponent";
+// import HelloComponent from "./component/HelloComponent";
+// import LoginComponent from "./component/LoginComponent";
 
 // ReactDOM.render(<LoginComponent />, document.getElementById("root"));
 
-// const HelloComponent= () => {
+// const HelloComponent = () => {
 //   return HelloComponent
 // }
 
@@ -20,11 +20,11 @@ import HelloComponent from "./component/HelloComponent";
 
 // ReactDOM.render(<StateFullComponent />, document.getElementById('root'));
 
-function HelloComponent(){
-  return HelloComponent
-}
+// function HelloComponent(){
+//   return HelloComponent
+// }
 
-ReactDOM.render(<HelloComponent />, document.getElementById('root'));
+// ReactDOM.render(<HelloComponent />, document.getElementById('root'));
 
 // class Test extends React.Component {
 //   constructor(props) {
