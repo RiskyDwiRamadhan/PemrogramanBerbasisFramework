@@ -1,0 +1,41 @@
+{
+  "mahasiswa": [
+    {
+      "NIM": 180823453,
+      "id": 1,
+      "nama": "Mahasiswa 1",
+      "alamat": "Jl. Soekarno Hatta No. 9 Malang",
+      "hp": "081802023249",
+      "angkatan": 2018,
+      "status": "aktif"
+    },
+    {
+      "NIM": 140823453,
+      "id": 2,
+      "nama": "Mahasiswa X",
+      "alamat": "Jl. Menur No. 9 Surabaya",
+      "hp": "081802023523",
+      "angkatan": 2014,
+      "status": "lulus"
+    },
+    {
+      "NIM": "1931228190",
+      "id": 1647479823541,
+      "nama": "Risky Dwi Ramadhan",
+      "alamat": "Pasuruan",
+      "hp": "0892103132",
+      "angkatan": "2018",
+      "status": "aktif"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
