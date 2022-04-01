@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Main from "./Tugas/Tugas";
-// import "./Tugas/style.css";
 import reportWebVitals from './reportWebVitals';
 
 // ReactDOM.render(
