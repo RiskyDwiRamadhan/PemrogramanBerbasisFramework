@@ -3,26 +3,18 @@
     {
       "userId": 1,
       "id": 1,
-      "nama": "Kulkas Sharp 2 Pintu",
-      "harga": 3890000,
+      "nama": "SHARP KULKAS SIDE BY SIDE SJ-IF51PG-CG INVERTER",
+      "harga": 8790000,
       "total_qty": 1,
-      "total_harga": 3890000
-    },
-    {
-      "userId": 1,
-      "id": 1649869396336,
-      "nama": "Kulkas Sharp 2 Pintu",
-      "harga": 3890000,
-      "total_qty": 1,
-      "total_harga": 3890000
+      "total_harga": 8790000
     },
     {
       "userId": 2,
       "id": 2,
-      "nama": "Polytron 2 Pintu",
-      "harga": 3790000,
+      "nama": "Kulkas Aqua AQR-D251(DS) Free Ongkir 2 Pintu 169 L Dark Silver",
+      "harga": 4890000,
       "total_qty": 1,
-      "total_harga": 3790000
+      "total_harga": 4890000
     }
   ],
   "profile": {

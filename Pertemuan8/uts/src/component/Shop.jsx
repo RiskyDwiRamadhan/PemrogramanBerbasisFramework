@@ -57,7 +57,7 @@ class Shop extends Component {
     return (        
       <div className="artikel"> 
         <div className="gambar-artikel">
-            <img src="http://placeimg.com/80/80/tech" alt="Gambar Tumbnail Artikel" />						
+            <img src= {this.props.Pgambar} alt="Gambar Tumbnail Artikel" />						
         </div>
             <div className="konten-artikel">
                 <p className="isi-artikel">ID    : {this.props.pid}</p>

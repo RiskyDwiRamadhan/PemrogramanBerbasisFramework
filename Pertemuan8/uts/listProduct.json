@@ -1,59 +1,43 @@
 {
   "product": [
     {
-      "userId": 1,
-      "id": 1,
-      "nama": "Kulkas Sharp 2 Pintu",
-      "harga": 3890000,
-      "gambar": "../assets/img/Sharp2.jpg",
-      "stok": 10      
+        "userId": 1,
+        "id": 1,
+        "nama": "SHARP KULKAS SIDE BY SIDE SJ-IF51PG-CG INVERTER",
+        "harga": 8790000,
+        "gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/11/17/9fdf081c-4179-417e-8acc-a69c2de1ef62.jpg",
+        "stok": 4    
     },
     {
-        "userId": 1,
-        "id": 2,
-        "nama": "Polytron 2 Pintu",
-        "harga": 3790000,
-        "gambar": "Polytron1",
-        "stok": 4    
+      "userId": 1,
+      "id": 2,
+      "nama": "Kulkas Aqua AQR-D251(DS) Free Ongkir 2 Pintu 169 L Dark Silver",
+      "harga": 4890000,
+      "gambar": "https://images.tokopedia.net/img/cache/900/hDjmkQ/2021/3/20/627e3046-4a3f-42e4-bad7-42eed8d2c2c8.jpg",
+      "stok": 10      
     },
     {
         "userId": 1,
         "id": 3,
-        "nama": "Lemari ES 4 Pintu",
-        "harga": 8790000,
-        "gambar": "Pintu4",
+        "nama": "Kulkas Sharp 1 Pintu Kirei 166 ND Defrost",
+        "harga": 3590000,
+        "gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/1/d0237875-01c1-48d3-ba40-87544951ec73.jpg",
         "stok": 4    
     },
     {
-      "userId": 1,
-      "id": 4,
-      "nama": "Aqua 191",
-      "harga": 4890000,
-      "gambar": "Aqua",
-      "stok": 10      
+        "userId": 1,
+        "id": 4,
+        "nama": "CHANGHONG CRF208 Kulkas / Lemari Es 2 Pintu",
+        "harga": 5790000,
+        "gambar": "https://images.tokopedia.net/img/cache/900/product-1/2020/8/7/4823500/4823500_4a1c6032-edb1-4a84-847d-a59f6139d7fa_800_800",
+        "stok": 4    
     },
     {
         "userId": 1,
         "id": 5,
-        "nama": "Panasonic 2 Pintu",
-        "harga": 3590000,
-        "gambar": "Panasonic",
-        "stok": 4    
-    },
-    {
-        "userId": 1,
-        "id": 6,
-        "nama": "Lemari ES 3 Pintu",
-        "harga": 5790000,
-        "gambar": "Pintu3",
-        "stok": 4    
-    },
-    {
-        "userId": 1,
-        "id": 7,
-        "nama": "Lemari ES Mini",
+        "nama": "SAMSUNG KULKAS MULTI DOOR DIGITAL INVERTER 4 PINTU / RF48A4000B4",
         "harga": 2540000,
-        "gambar": "Mini",
+        "gambar": "https://images.tokopedia.net/img/cache/900/VqbcmM/2021/9/9/cf8b828b-9d77-4430-b4e4-ef976ac0be9e.jpg",
         "stok": 4    
     }
   ],
