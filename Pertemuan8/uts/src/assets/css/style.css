@@ -1,0 +1,110 @@
+body {
+  background-color: #2D3B48;
+  padding: 20px;
+  margin: 0;
+}
+.title {
+  color: white;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #23BA91;
+  padding: 0;
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: #FFF;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
+.artikel{
+  width: 95%;
+  padding: 10px;
+  border: 1px solid blue;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.gambar-artikel{
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.gambar-artikel img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.konten-artikel{
+  flex: 1;
+}
+
+.konten-artikel div.isi-artikel{
+  font-size: 16px;
+  margin-bottom: 10px;    
+  font-family: sans-serif;
+}
+
+.konten-artikel p.isi-artikel{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+table{
+  width: 100%;
+  border: 1px solid; 
+}
+
+.table1{
+  width: 50%;
+  /* border: 1px solid;  */
+}
+
+.table1 td{
+  /* width: 50%; */
+  border: 0px solid; 
+}
+
+td{
+  border: 1px solid; 
+}
+
+.total{
+  text-align: right;
+  padding-right: 10px;
+}
+
+.beli{
+  width: 79px;
+  height: 30px;
+  align-items: center;
+  background-color: #3c3cc7;
+  color: #fdfcfb;
+  border-radius: 3px;
+}

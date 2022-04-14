@@ -1,0 +1,70 @@
+{
+  "product": [
+    {
+      "userId": 1,
+      "id": 1,
+      "nama": "Kulkas Sharp 2 Pintu",
+      "harga": 3890000,
+      "gambar": "../assets/img/Sharp2.jpg",
+      "stok": 10      
+    },
+    {
+        "userId": 1,
+        "id": 2,
+        "nama": "Polytron 2 Pintu",
+        "harga": 3790000,
+        "gambar": "Polytron1",
+        "stok": 4    
+    },
+    {
+        "userId": 1,
+        "id": 3,
+        "nama": "Lemari ES 4 Pintu",
+        "harga": 8790000,
+        "gambar": "Pintu4",
+        "stok": 4    
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "nama": "Aqua 191",
+      "harga": 4890000,
+      "gambar": "Aqua",
+      "stok": 10      
+    },
+    {
+        "userId": 1,
+        "id": 5,
+        "nama": "Panasonic 2 Pintu",
+        "harga": 3590000,
+        "gambar": "Panasonic",
+        "stok": 4    
+    },
+    {
+        "userId": 1,
+        "id": 6,
+        "nama": "Lemari ES 3 Pintu",
+        "harga": 5790000,
+        "gambar": "Pintu3",
+        "stok": 4    
+    },
+    {
+        "userId": 1,
+        "id": 7,
+        "nama": "Lemari ES Mini",
+        "harga": 2540000,
+        "gambar": "Mini",
+        "stok": 4    
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "keranjang": [
+    {
+      "userId": 1,
+      "id": 1,
+      "nama": "Kulkas Sharp 2 Pintu",
+      "harga": 3890000,
+      "total_qty": 1,
+      "total_harga": 3890000
+    },
+    {
+      "userId": 1,
+      "id": 1649869396336,
+      "nama": "Kulkas Sharp 2 Pintu",
+      "harga": 3890000,
+      "total_qty": 1,
+      "total_harga": 3890000
+    },
+    {
+      "userId": 2,
+      "id": 2,
+      "nama": "Polytron 2 Pintu",
+      "harga": 3790000,
+      "total_qty": 1,
+      "total_harga": 3790000
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

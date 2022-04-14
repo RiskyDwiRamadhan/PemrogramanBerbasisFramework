@@ -8,7 +8,7 @@ class BlogPost extends Component{
 	}
 
 	ambilDataDariServerAPI(){
-		fetch('http://localhost:3001/posts')
+		fetch('http://localhost:3001/product')
 		// fetch('https://jsonplaceholder.typicode.com/posts')
 			.then(response => response.json())
 			.then(jsonHasilAmbilDariAPI =>{
@@ -93,7 +93,7 @@ class BlogPost extends Component{
 			 	<h2>Daftar Artikel</h2>
 			 	{
 					this.state.listArtikel.map(artikel => {
-						return <Post key={artikel.id}judul={artikel.title} isi={artikel.body} idArtikel={artikel.id} hapusArtikel={this.handleHapusArtikel}/>
+						return <Post key={artikel.id} judul={artikel.nama} isi={artikel.harga} pgambar={artikel.gambar} idArtikel={artikel.stok} hapusArtikel={this.handleHapusArtikel}/>
 			 		})
 			 	}
 			</div>
