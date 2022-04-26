@@ -1,21 +1,37 @@
 import React, {Component} from "react";
 import './MahasiswaPost.css'
 import Post from '../../component/MahasiswaPost/MahasiswaPost'
+import API from './Services/index';
 
 
 class MahasiswaPost extends Component{
     state = {
         listMahasiswa:[],
+		insertMahasiswa: {
+            NIM: "",
+            id: 1,
+            nama: "",
+            alamat: "",
+            hp: "",
+            angkatan: 2018,
+            status: ""
+		}
     }
 
     ambilDataDariServerAPI = () => {
-        fetch('http://localhost:3002/mahasiswa?_sort=id&_order=desc')
-        .then(Response => Response.json())
-        .then(jsonHasilAmbilDariAPI => {
-            this.setState({
-                listMahasiswa: jsonHasilAmbilDariAPI
-            })
-        })
+        // fetch('http://localhost:3002/mahasiswa?_sort=id&_order=desc')
+        // .then(Response => Response.json())
+        // .then(jsonHasilAmbilDariAPI => {
+        //     this.setState({
+        //         listMahasiswa: jsonHasilAmbilDariAPI
+        //     })
+        // })
+        
+		API.getNewBlog().then(result => {
+			this.setState({
+				listMahasiswa: result
+			})
+		})
     }
 
     componentDidMount(){
@@ -23,10 +39,15 @@ class MahasiswaPost extends Component{
     }
 
     handleHapusMahasiswa = (data) => {
-        fetch(`http://localhost:3002/mahasiswa/${data}`,{method: 'DELETE'})
-        .then(res =>{
-            this.ambilDataDariServerAPI()
-        })
+        // fetch(`http://localhost:3002/mahasiswa/${data}`,{method: 'DELETE'})
+        // .then(res =>{
+        //     this.ambilDataDariServerAPI()
+        // })
+        
+		API.deleteNewBlog(data)
+            .then((response)=>{
+                this.ambilDataDariServerAPI();
+            });
     }
 
     handleTambahMahasiswa = (event) => {
@@ -40,16 +61,21 @@ class MahasiswaPost extends Component{
     }
 
     handleTombolSimpan = () => {
-        fetch('http://localhost:3002/mahasiswa', {
-            method: 'post',
-            headers: {
-                'Accept' : 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(this.state.insertMahasiswa)
-        })
-        .then( ( Response ) => {
-            this.ambilDataDariServerAPI();
+        // fetch('http://localhost:3002/mahasiswa', {
+        //     method: 'post',
+        //     headers: {
+        //         'Accept' : 'application/json',
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(this.state.insertMahasiswa)
+        // })
+        // .then( ( Response ) => {
+        //     this.ambilDataDariServerAPI();
+        // });
+        
+		API.postNewBlog(this.state.insertMahasiswa)
+            .then((response)=>{
+                this.ambilDataDariServerAPI();
         });
     }
 

@@ -1,21 +1,34 @@
 import React, {Component} from "react";
 import './BlogPost.css';
 import Post from "./Post";
+import API from '../../Services/index';
 
 class BlogPost extends Component{
 	state ={
-		listArtikel:[]
+		listArtikel:[], 
+		insertArtikel: {
+			userId: 1,
+			id: 1,
+			title: "",
+			body: ""
+		}
 	}
 
 	ambilDataDariServerAPI(){
-		fetch('http://localhost:3001/product')
-		// fetch('https://jsonplaceholder.typicode.com/posts')
-			.then(response => response.json())
-			.then(jsonHasilAmbilDariAPI =>{
-				this.setState({
-					listArtikel: jsonHasilAmbilDariAPI
-				})
+		// fetch('http://localhost:3001/posts')
+		// // fetch('https://jsonplaceholder.typicode.com/posts')
+		// 	.then(response => response.json())
+		// 	.then(jsonHasilAmbilDariAPI =>{
+		// 		this.setState({
+		// 			listArtikel: jsonHasilAmbilDariAPI
+		// 		})
+		// 	})
+
+		API.getNewBlog().then(result => {
+			this.setState({
+				listArtikel: result
 			})
+		})
 	}
 
 	componentDidMount(){
@@ -31,10 +44,14 @@ class BlogPost extends Component{
 	}
 
 	handleHapusArtikel = (data) =>{
-		fetch(`http://localhost:3001/posts/${data}`, {method:'DELETE'})
-			.then(res =>{
-				this.ambilDataDariServerAPI()
-			})
+		// fetch(`http://localhost:3001/posts/${data}`, {method:'DELETE'})
+		// 	.then(res =>{
+		// 		this.ambilDataDariServerAPI()
+		// 	})
+			API.deleteNewBlog(data)
+				.then((response)=>{
+					this.ambilDataDariServerAPI();
+				});
 	}
 
 	handleTambahArtikel = (event) => {
@@ -48,15 +65,20 @@ class BlogPost extends Component{
 	}
 
 	handleTombolSimpan = () => {
-		fetch('http://localhost:3001/posts', {
-			method: 'post',
-			headers: {
-				'Accept': 'application/json',
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify(this.state.insertArtikel)
-		})
-			.then((Response) => {
+		// fetch('http://localhost:3001/posts', {
+		// 	method: 'post',
+		// 	headers: {
+		// 		'Accept': 'application/json',
+		// 		'Content-Type': 'application/json'
+		// 	},
+		// 	body: JSON.stringify(this.state.insertArtikel)
+		// })
+		// 	.then((Response) => {
+		// 		this.ambilDataDariServerAPI();
+		// 	});
+
+		API.postNewBlog(this.state.insertArtikel)
+			.then((response)=>{
 				this.ambilDataDariServerAPI();
 			});
 	}
@@ -93,7 +115,7 @@ class BlogPost extends Component{
 			 	<h2>Daftar Artikel</h2>
 			 	{
 					this.state.listArtikel.map(artikel => {
-						return <Post key={artikel.id} judul={artikel.nama} isi={artikel.harga} pgambar={artikel.gambar} idArtikel={artikel.stok} hapusArtikel={this.handleHapusArtikel}/>
+									return <Post key={artikel.id}judul={artikel.title} isi={artikel.body} idArtikel={artikel.id} hapusArtikel={this.handleHapusArtikel}/>
 			 		})
 			 	}
 			</div>
